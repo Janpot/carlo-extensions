@@ -1,0 +1,16 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@npm-chrome-extensions/react-devtools": "3.4.2-dev.0",
+    "puppeteer": "^1.10.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "puppeteer-extensions",
+  "version": "1.0.0",
+  "description": "Launch headful puppeteer with extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janpot/puppeteer-extensions.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "extensions"
+  ],
+  "author": "Jan Potoms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Janpot/puppeteer-extensions/issues"
+  },
+  "homepage": "https://github.com/Janpot/puppeteer-extensions#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
