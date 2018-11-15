@@ -1,13 +1,20 @@
-const puppeteer = require('puppeteer');
+const carlo = require('carlo');
+const path = require('path')
 const { withExtensions } = require('..');
 
 (async () => {
-  const browser = await puppeteer.launch(withExtensions([
+  const app = await carlo.launch(withExtensions([
     require('@npm-chrome-extensions/react-devtools')
   ], {
-    headless: false,
-    devtools: true
+    args: [ '--auto-open-devtools-for-tabs' ]
   }));
-  const page = await browser.newPage();
-  await page.goto('https://reactjs.org/');
+
+  app.on('exit', () => process.exit());
+  app.serveFolder(path.resolve(__dirname));
+
+  // Expose 'env' function in the web environment.
+  await app.exposeFunction('env', _ => process.env);
+
+  // Navigate to the main page of your app.
+  await app.load('index.html');
 })();

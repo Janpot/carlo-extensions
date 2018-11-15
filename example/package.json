@@ -10,7 +10,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@npm-chrome-extensions/react-devtools": "3.4.2-dev.0",
-    "puppeteer": "^1.10.0"
+    "@npm-chrome-extensions/react-devtools": "3.4.2-dev.1"
+  },
+  "dependencies": {
+    "carlo": "^0.9.24"
   }
 }

@@ -1,30 +1,28 @@
 # carlo-extensions
 
-Use chrome extensions conveniently in headful puppeteer;
+Use chrome extensions conveniently in carlo;
 
 ```js
-const { withExtensions } = require('puppeteer-extensions');
-const browser = await puppeteer.launch(withExtensions([
+const { withExtensions } = require('carlo-extensions');
+const app = await carlo.launch(withExtensions([
   path.resolve(__dirname, 'my-extension')
 ], {
-  headless: false,
-  devtools: true
+  args: [ '--auto-open-devtools-for-tabs' ]
 }));
 ```
 
-The `@npm-chrome-extensions` npm org publishes existing chrome extensions. You can used them as follows:
+The `@npm-chrome-extensions` org publishes existing chrome extensions on npm. You can use them as follows:
 
 ```sh
-npm i -D @npm-chrome-extensions/react-devtools@3.4.2-dev.0
+npm i -D @npm-chrome-extensions/react-devtools@3.4.2-dev.1
 ```
 
 ```js
-const { withExtensions } = require('puppeteer-extensions');
-const browser = await puppeteer.launch(withExtensions([
+const { withExtensions } = require('carlo-extensions');
+const app = await carlo.launch(withExtensions([
   require('@npm-chrome-extensions/react-devtools')
 ], {
-  headless: false,
-  devtools: true
+  args: [ '--auto-open-devtools-for-tabs' ]
 }));
 ```
 

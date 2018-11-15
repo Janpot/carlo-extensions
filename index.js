@@ -1,9 +1,7 @@
 const path = require('path')
 
 function withExtensions (extensions = [], launchConfig = {}) {
-  const extensionPaths = extensions
-    .map(manifestPath => path.dirname(manifestPath))
-    .join(',');
+  const extensionPaths = extensions.join(',');
   return {
     ...launchConfig,
     args: [
