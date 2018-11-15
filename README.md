@@ -1,6 +1,6 @@
 # carlo-extensions
 
-Use chrome extensions conveniently in carlo;
+Use chrome extensions conveniently in [carlo](https://www.npmjs.com/package/carlo);
 
 ```js
 const { withExtensions } = require('carlo-extensions');

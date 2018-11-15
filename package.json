@@ -1,28 +1,28 @@
 {
-  "name": "puppeteer-chrome-extensions",
+  "name": "carlo-extensions",
   "version": "1.0.0",
-  "description": "Launch headful puppeteer with extensions",
+  "description": "Launch carlo with extensions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Janpot/puppeteer-extensions.git"
+    "url": "git+https://github.com/Janpot/carlo-extensions.git"
   },
   "keywords": [
-    "puppeteer",
+    "carlo",
     "extensions"
   ],
   "author": "Jan Potoms",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Janpot/puppeteer-extensions/issues"
+    "url": "https://github.com/Janpot/carlo-extensions/issues"
   },
   "files": [
     "index.js"
   ],
-  "homepage": "https://github.com/Janpot/puppeteer-extensions#readme",
+  "homepage": "https://github.com/Janpot/carlo-extensions#readme",
   "devDependencies": {},
   "dependencies": {}
 }
