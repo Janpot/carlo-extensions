@@ -1,4 +1,4 @@
-# puppeteer-extensions
+# carlo-extensions
 
 Use chrome extensions conveniently in headful puppeteer;
 
